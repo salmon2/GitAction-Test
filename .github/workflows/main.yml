@@ -6,8 +6,8 @@ on:
   workflow_dispatch:
 
 env:
-  S3_BUCKET_NAME: logging-system-deploy
-  PROJECT_NAME: playground-logging
+  S3_BUCKET_NAME: logging-system-deploy-salmon2
+  PROJECT_NAME: test
 
 jobs:
   build:
