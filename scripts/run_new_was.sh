@@ -1,8 +1,10 @@
 # run_new_was.sh
-# !/bin/bash
+
+#!/bin/bash
 
 CURRENT_PORT=$(cat /home/ec2-user/service_url.inc | grep -Po '[0-9]+' | tail -1)
 TARGET_PORT=0
+
 echo "> Current port of running WAS is ${CURRENT_PORT}."
 
 if [ ${CURRENT_PORT} -eq 8081 ]; then
